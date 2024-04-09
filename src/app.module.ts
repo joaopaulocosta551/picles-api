@@ -5,6 +5,7 @@ import { ShelterModule } from './shelter/shelter.module';
 import { MongooseModule } from '@nestjs/mongoose';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { config } from 'process';
+import { PetModule } from './pet/pet.module';
 
 @Module({
   imports: [
@@ -17,6 +18,7 @@ import { config } from 'process';
       }),
     }),
     ShelterModule,
+    PetModule,
   ],
   controllers: [AppController],
   providers: [AppService],
