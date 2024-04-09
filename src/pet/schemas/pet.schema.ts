@@ -1,4 +1,4 @@
-import { Prop, Schema } from '@nestjs/mongoose';
+import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import mongoose, { HydratedDocument } from 'mongoose';
 
 export type PetDocument = HydratedDocument<Pet>;
@@ -24,3 +24,4 @@ export class Pet {
   @Prop({ required: true })
   upudatedAt: Date;
 }
+export const PetSchema = SchemaFactory.createForClass(Pet);
