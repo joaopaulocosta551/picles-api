@@ -14,12 +14,13 @@ export default class UpdateShelterControllerInput {
   @IsString()
   @Length(10, 11)
   whatsapp: string;
-  @IsNotEmpty()
   @IsString()
   @IsNumberString()
-  phone: string;
+  @Length(10, 11)
   @IsNotEmpty()
+  phone: string;
   @IsString()
   @IsEmail()
+  @IsNotEmpty()
   email: string;
 }
