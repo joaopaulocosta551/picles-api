@@ -3,6 +3,8 @@ export default class PetTokens {
     static getPetByIdUseCase = 'getPetByIdUseCase';
     static updatePetByIdUseCase = 'updatePetByIdUseCase';
     static deletePetByIdUseCase = 'deletePetByIdUseCase';
+    static updatePetPhotoByIdUseCase = 'updatePetPhotoByIdUseCase';
+    static getPetsUseCase = 'getPetsUseCase';
     static petRepository = 'petRepository';
   }
   
